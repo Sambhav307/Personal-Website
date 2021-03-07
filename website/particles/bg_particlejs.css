@@ -1,0 +1,29 @@
+#particles-js{
+    background:black;
+    height: 100%;
+}
+#particles-js1{
+    height: 100%;
+}
+body {
+    overflow: hidden; /* Hide scrollbars */
+  }
+.box{
+    width: 100%;
+    height: 100%;            
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;  /* for demo purpose  */
+    z-index: 1;
+}
+.stack-top{
+    z-index: 1;
+    /* pointer-events:none; */
+    
+}
+
+.button-wrapper{
+    z-index: -1;
+
+}

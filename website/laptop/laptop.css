@@ -1,0 +1,47 @@
+html,
+body,
+main {
+    height: 100%;
+    width: 100%;
+}
+
+.svgwrapper {
+    display: none;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 40px;
+    perspective: 2200px;
+    padding: 2px;
+    pointer-events: none;
+    ;
+}
+
+#laptop-screen {
+    pointer-events: none;
+    width: 75%;
+    transform-style: preserve-3d;
+    transform: rotateX( -82deg);
+    -webkit-backface-visibility: hidden;
+    transition: transform ease-out .4s;
+    transform-origin: 0 100%;
+}
+
+#laptop-keyboard {
+    width: 75%;
+    pointer-events: auto;
+    margin: 0;
+    position: relative;
+    margin: 0 auto;
+    filter: drop-shadow( 5px 5px 10px rgba(0, 0, 0, .4));
+}
+
+#laptop-screen.open {
+    pointer-events: auto;
+    margin: 0;
+    transform: rotateX( 0);
+    filter: drop-shadow( 5px 5px 10px rgba(0, 0, 0, .4));
+}
