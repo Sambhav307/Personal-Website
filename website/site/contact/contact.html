@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./contact.css">
+
+</head>
+
+<body>
+
+    <br>
+    <input class="c-checkbox" type="checkbox" id="start">
+    <input class="c-checkbox" type="checkbox" id="progress2">
+    <input class="c-checkbox" type="checkbox" id="progress3">
+    <input class="c-checkbox" type="checkbox" id="finish">
+    <div class="c-form__progress"></div>
+
+    <div class="c-formContainer">
+        <div class="c-welcome">I will get back to you soon:)</div>
+        <form class="c-form" action="">
+            <div class="c-form__group">
+                <label class="c-form__label" for="username">
+                        <input
+                            type="text"
+                            id="username"
+                            class="c-form__input"
+                            placeholder=" "
+                            pattern="[^\s]+"
+                            required>
+    
+                        <label class="c-form__next" for="progress2" role="button">
+                            <span class="c-form__nextIcon"></span>
+                        </label>
+
+                <span class="c-form__groupLabel">What is your good Name?</span>
+                <b class="c-form__border"></b>
+                </label>
+            </div>
+
+            <div class="c-form__group">
+                <label class="c-form__label" for="femail">
+                        <input
+                            type="email"
+                            id="femail"
+                            class="c-form__input"
+                            placeholder=" "
+                            pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+                            required>
+    
+                        <label class="c-form__next" for="progress3" role="button">
+                            <span class="c-form__nextIcon"></span>
+                        </label>
+
+                <span class="c-form__groupLabel">What's your email?</span>
+                <b class="c-form__border"></b>
+                </label>
+            </div>
+
+            <div class="c-form__group">
+                <label class="c-form__label" for="fpass">
+                        
+                            <textarea  id="fpass"
+                            class="c-form__input"
+                            placeholder=" "
+                            required > </textarea>
+    
+                        <label class="c-form__next" for="finish" role="button">
+                            <span class="c-form__nextIcon"></span>
+                        </label>
+
+                <span class="c-form__groupLabel">Message.</span>
+                <b class="c-form__border"></b>
+                </label>
+            </div>
+
+            <label class="c-form__toggle" for="start">Contact me<span class="c-form__toggleIcon"></span></label>
+        </form>
+    </div>
+
+    <div style="z-index:10">
+        &lt;&gt; Your feedback is valuable &lt;/&gt;
+    </div>
+
+
+    <div class="menu">
+        <div class="label">Follow Me</div>
+        <div class="spacer"></div>
+        <div class="item"><a href="https://www.linkedin.com/in/sambhav307/"><span>LinkedIn</span></a></div>
+        <div class="item"><a href="https://github.com/Sambhav307"><span>Github</span> </a></div>
+        <div class="item"><a href="https://twitter.com/sambhav307"><span>Twitter</span> </a></div>
+        <div class="item"><a href="https://www.behance.net/sambhavjain11"><span>Behance</span> </a></div>
+        <div class="item"><a href="https://www.instagram.com/sambhav_27/"><span>Instagram</span></a></div>
+
+    </div>
+</body>
+
+</html>

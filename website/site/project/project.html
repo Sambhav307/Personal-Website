@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./project.css">
+    <script src="./project.js"></script>
+
+</head>
+
+<body>
+
+
+    <main id="hh" class="page-content">
+
+        <div class="card">
+            <div class="content">
+                <h2 class="title">Don't Come Closer to Me</h2>
+                <p class="copy">An interactive art installation which grabs your attention by its random beautiful motion and when you come close to it. It pauses and stops working, pretending nothing happened.
+
+                </p><button class="btn" onclick="Dont()">Website</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2 class="title">Color Switch</h2>
+                <p class="copy">Replica of popular Android Game Color on window using Java nd javafxml.
+                </p><button class="btn" onclick="colorSwitch()">Github Code</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2 class="title">MicroGO</h2>
+                <p class="copy">Miniature Physical version of Golf using Arduino and MIT App inventor.</p>
+                <button class="btn" onclick="Micro()">Youtube Video</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2 class="title">ETC- Effective Teaching Community</h2>
+                <p class="copy">Developed a service with the aim to improve teaching quality in underprivileged schools of the country. The service works as a intermediator between schools & NGOs by providing them digital solution and forming a digital training for teacher
+                    training. This was done by following a complete design process and making a interactive interface based on insights.
+
+                </p><button class="btn" onclick="etc()">Behance Link</button>
+            </div>
+        </div>
+
+    </main>
+
+    <script type="text/javascript">
+        let progress = document.getElementById("progressbar");
+
+
+        let hh = document.getElementById("hh");
+
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+
+
+        console.log(totalHeight + " = " + document.body.scrollHeight + " " + window.innerHeight);
+
+        window.onscroll = function() {
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+            console.log(progressHeight + " " + window.pageYOffset + " " + totalHeight);
+        }
+    </script>
+</body>
+
+</html>

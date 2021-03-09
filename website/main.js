@@ -6,15 +6,22 @@ window.onload = function() {
 
         overlaytext.style.display = "block";
         divv.style.display = "block";
-
     }, 1000);
+    setTimeout(function() {
+        switchcheckbox.style.display = "block";
+    }, 1500);
 
     setTimeout(function() {
 
-        switchcheckbox.style.display = "block";
+        write();
+    }, 1500);
 
-    }, 500);
 
+
+};
+
+
+function write() {
 
 
     var elements = document.getElementsByClassName('typewrite');
@@ -30,8 +37,7 @@ window.onload = function() {
     css.type = "text/css";
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
-};
-
+}
 
 
 
@@ -58,7 +64,7 @@ TxtType.prototype.tick = function() {
     this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
 
     var that = this;
-    var delta = 200 - Math.random() * 100;
+    var delta = 100 - Math.random() * 50;
 
     if (this.isDeleting) { delta /= 2; }
 
@@ -75,3 +81,12 @@ TxtType.prototype.tick = function() {
         that.tick();
     }, delta);
 };
+
+
+
+var audio = document.getElementById("audio");
+
+
+function playAudio() {
+    audio.play();
+}
