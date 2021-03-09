@@ -32,7 +32,7 @@ text2.innerHTML = "If you didn't see logo/left area is empty click here";
 text2.style.top = 0 + 'px';
 text2.style.left = 0 + 'px';
 text2.onclick = function() {
-    window.open("http://127.0.0.1:5500/website/site/about/about.html")
+    window.open("./about.html")
 }
 document.body.appendChild(text2);
 
