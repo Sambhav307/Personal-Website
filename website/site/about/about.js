@@ -188,7 +188,7 @@ png.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAABkCAMAAAAysdnFAAA
 
 // Run drawImage after page has been fully loaded
 window.addEventListener('load', (event) => {
-    console.log('page has loaded');
+
     ctx.drawImage(png, 0, 0);
     drawImage();
 });

@@ -1,4 +1,9 @@
 window.onload = function() {
+    var loader = document.getElementById("loadd");
+
+    loader.remove();
+    console.log("done");
+
     var divv = document.getElementById("first");
     var switchcheckbox = document.getElementById("switch");
     var overlaytext = document.getElementById("overlaytext");
@@ -20,6 +25,7 @@ window.onload = function() {
 
 };
 
+console.log("out");
 
 function write() {
 
